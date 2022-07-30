@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero--section{
+    background: url(/images/heroSectionBackground.png);
+    background-position: center;
+    background-size: cover;
+    min-height:60vh ;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 48px;
+    align-items: center;
+    height: 60px;
+
+}
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+  .menu-container{
+    display: flex;
+    gap: 20px;
+  }
+  .user-icon{
+    /* display:none; */
+    border-radius: 100%;
+    border:solid 1px whitesmoke;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .hero-container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+align-items: center;
+gap: 32px;
+height: calc(60vh - 60px);
+  }
+  .hero-conatiner-logo{
+    height: 55px;
+  }
+  .logo-header-title{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .hero-section-input{
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-section-city,
+  .hero-section-searchbar{
+    border: none;
+    padding: 5px;
+    outline:0;
+  }
+  .hero-section-city{
+    width: 30%;
+  }
+  .hero-section-searchbar{
+    width:70%;
+    border-left: 2px  solid #e0e0e0 ;
+  }
+  @media only screen and (max-width:600px){
+    .link{
+        display: none;
+    }
+    .hero--section{
+        min-height: 80vh;
+    }
+    .user-icon{
+        display: flex;
+    }
+    .hero-section-input{
+      flex-direction: column;
+      background-color: transparent;
+      width: 100%;
+    }
+    .hero-container{
+      height: calc(80vh - 60px);
+    }
+    .hero-section-searchbar,
+    .hero-section-city
+    {
+      width: 90%;
+      padding: 15px;
+      border-radius: 10px;   
+      border-left: none ;
+    }
+  }
