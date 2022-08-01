@@ -204,6 +204,7 @@ font-size: 13px;
   gap:20px ;
   align-items: center;
   justify-content: center;
+  flex: auto;
 }
 .places-cards .card{
   border: 2px solid #e0e0e0;
@@ -231,6 +232,145 @@ font-size: 13px;
   justify-content: center;
   align-items: center;
   height: 87px;
+  
+}
+
+
+ .get-the-app{
+  background-color: #f7eeef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 48px;
+  width: 100%;
+ }
+.get-the-app .semicontainer{
+  width: 60%;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-the-app .semicontainer .left{
+  flex: 2;
+}
+.get-the-app .semicontainer .left img{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.get-the-app .semicontainer .right{
+  display: flex;
+  flex: 3;
+  height: 100%;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.right h1{
+  font-weight: 500;
+  font-size: 45px;
+}
+.right p{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.semicontainer .right .radio-button{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.semicontainer .right .radio-button div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.semicontainer .right .radio-button div input{
+  height: 15px;
+  width: 15px;
+  accent-color: rgb(239,79,95);
+}
+.semicontainer .right .input-container{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.semicontainer .right .input-container input,
+.semicontainer .right .input-container button{
+  border-radius: 10px;
+  padding: 10px 12px;
+  max-height: 40px; 
+  border: 1.5px solid grey;
+}
+.semicontainer .right .input-container button{
+  min-width: 130px;
+  background: rgb(250, 230, 233);
+  cursor: pointer;
+}
+.semicontainer .right .input-container input{
+  outline: none;
+  flex: auto;
+}
+
+.right .download-app-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.right .download-app-container h5{
+ font-weight: 400;
+ color: grey;
+}
+
+.right .download-app-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.download-app-container{
+  font-weight: 400;
+  color: grey;
+
+}
+.download-app-container div{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.download-app-container div img{
+  width: 35%;
+}
+@media only screen and (max-width:1300px){
+ .get-the-app .semicontainer .left{
+  flex: 1;
+ }
+ .get-the-app .semicontainer .right{
+  flex: 1;
+ }
+ 
+}
+@media only screen and (max-width:900px){
+  .get-the-app{
+    padding: 2rem ;
+  }
+.get-the-app .semicontainer{
+  width: 90%;
+}
+}
+@media only screen and (max-width:700px){
+  .get-the-app
+{  padding: 3rem 0;
+}
+.get-the-app .semicontainer{
+  width: 80%;
+  flex-direction: column;
+}
 }
 
 
